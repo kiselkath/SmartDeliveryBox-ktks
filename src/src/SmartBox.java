@@ -1,12 +1,15 @@
+import java.util.ArrayList;
+
 public class SmartBox<T> {
 
-    private T item;
+    private ArrayList<T> items = new ArrayList<>();
+
 
     public void addItem(T item) {
-        this.item = item;
+        this.items.add(item);
     }
 
-    public T getItem() {
-        return this.item;
+    public ArrayList<T> getItem() {
+        return this.items;
     }
 }

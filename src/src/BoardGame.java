@@ -8,4 +8,10 @@ public class BoardGame {
     public String getGameTitle(){
         return gameTitle;
     }
+
+    @Override
+    public String toString() {
+        return "BoardGame" +
+                "The Tittle of the game is: " + gameTitle + '\'';
+    }
 }
